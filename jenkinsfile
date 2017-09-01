@@ -12,8 +12,7 @@ buildDiscarder(logRotator(numToKeepStr: '2' , artifactNumToKeepStr: '1'))
 	junit 'reports/results.xml'
 }
 }
-}
-	stages {
+
 		stage ('build') {
 		steps {
 		sh 'ant -f build.xml -v'
